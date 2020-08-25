@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /*background: $bg;*/
+        }
+        .cell {
+            background: $grey;
+            width: 30px;
+            height: 30px;
+            border: 0px;
+            font-size: 15px;
+            vertical-align:bottom;
+            background: #e0e0e0;
+
+            /*opacity: 0.3;*/
+            flex-direction: row;
+            /*flex-wrap: wrap;*/
+            margin-bottom: 3px;
+            border-bottom: 2px solid darkgrey;
+            border-right: 2px solid darkgrey;
+            padding: 0px;
+            font-weight: bold;
+            /*box-sizing: content-box;*/
+
+        }
+        .done {
+            background: darkgrey;
+            opacity: 0.3;
+            transition: opacity 300ms;
+        }
+        .radar {
+            background: #a0a0a0;
+        }
+        .boom {
+            background: darkgrey;
+            border-bottom: 2px solid darkgrey;
+            border-right: 2px solid darkgrey;
+        }
+        .boom1 {
+             background: #f88;
+             border-bottom: 2px solid #f88;
+             border-right: 2px solid #f88;
+         }
+        #map {
+            background: #ffffff;
+            vertical-align:bottom;
+            border: 1px solid;
+            padding: 15px;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            transition: opacity 1s;
+
+        }
+    </style>
+    <title>扫雷</title>
+</head>
+<body>
+
+<div id="map"></div>
+
+<input id="id-input-cellNumber" type="number" placeholder="请设定地雷数">
+<input id="id-input-h" type="number" placeholder="请输入行高">
+<input id="id-input-w" type="number" placeholder="请设定列宽">
+<botton id="id-map-creat">生成地图</botton>
+
+</body>
+</html>
+<script src="mine%20swap.js"></script>
